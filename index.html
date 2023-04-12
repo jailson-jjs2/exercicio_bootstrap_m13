@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <title>Exercício M13</title>
+</head>
+
+<style>
+  header {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+    }
+  }
+</style>
+
+<header>
+  <div class="container">
+    <h1>Bandas favoritas</h1>
+    <div id="carousel_exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img class="d-block w-100 h-100" src="img/rock1.jpg" alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="d-block w-100 h-100" src="img/rock2.jpg" alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="d-block w-100 h-100" src="img/rock3.jpg" alt="">
+        </div>
+      </div>
+      <button data-bs-target="#carousel_exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button data-bs-target="#carousel_exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel_exemplo" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel_exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel_exemplo" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+  
+</header>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-bg-dark">
+          <div class="card-header">
+            Banda Americana
+          </div>
+          <img class="w-100 h-100" src="img/Megadeth.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Megadeth</h4>
+            <p class="card-text">Melhor disco: Youthanasia</p>
+            <a href="https://en.wikipedia.org/wiki/Youthanasia" target="_blank" class="btn btn-primary">Leia mais</a>
+          </div>
+          <footer class="card-footer">
+            Postado em: <time>11/04/3023</time>
+          </footer>
+        </div>  
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-bg-dark">
+          <div class="card-header">
+            Banda Brasileira
+          </div>
+          <img class="w-100 h-100" src="img/Sepultura.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Sepultura</h4>
+            <p class="card-text">Melhor disco: Arise</p>
+            <a href="https://pt.wikipedia.org/wiki/Arise" target="_blank" class="btn btn-primary">Leia mais</a>
+          </div>
+          <footer class="card-footer">
+            Postado em: <time>11/04/3023</time>
+          </footer>
+        </div>  
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-bg-dark">
+          <div class="card-header">
+            Banda Americana
+          </div>
+          <img class="w-100 h-100" src="img/Pro-pain.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Pro-Pain</h4>
+            <p class="card-text">Melhor disco: Foul Taste of Freedom</p>
+            <a href="https://www.discogs.com/release/2397738-Pro-Pain-Foul-Taste-Of-Freedom" target="_blank" class="btn btn-primary">Leia mais</a>
+          </div>
+          <footer class="card-footer">
+            Postado em: <time>11/04/3023</time>
+          </footer>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
